@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Grid">
+  <test name="On Firefox">
+  <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.OrgHRM.Tests.GridEg"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="On chrome">
+  <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.OrgHRM.Tests.GridEg"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

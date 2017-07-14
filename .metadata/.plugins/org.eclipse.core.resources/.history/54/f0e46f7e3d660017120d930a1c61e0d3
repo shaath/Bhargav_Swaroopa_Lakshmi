@@ -1,0 +1,14 @@
+package com.OrgHRM.Tests;
+
+import java.util.Date;
+
+public class DateConvEg {
+
+	public static void main(String[] args)
+	{
+		Date date=new Date();
+		System.out.println(date);
+
+	}
+
+}

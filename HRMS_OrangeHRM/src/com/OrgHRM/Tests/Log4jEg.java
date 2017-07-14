@@ -1,0 +1,25 @@
+package com.OrgHRM.Tests;
+
+import org.apache.log4j.Logger;
+import org.apache.log4j.xml.DOMConfigurator;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Log4jEg {
+	private static Logger logger=Logger.getLogger(Log4jEg.class);
+	public static void main(String[] args)
+	{
+		DOMConfigurator.configure("log4j.xml");
+		WebDriver driver=new FirefoxDriver();
+		logger.info("Browser Launched");
+		
+		driver.get("http://gmail.com");
+		logger.fatal("Gmail Appliation Launched");
+		
+		driver.manage().window().maximize();
+		logger.info("Browser Maximized");
+		
+
+	}
+
+}

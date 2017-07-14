@@ -1,0 +1,6 @@
+package com.OrgHRM.Utilities;
+
+public class Constants 
+{
+	public static String xlpath="F:\\LiveProject\\HRMS_OrangeHRM\\src\\com\\OrgHRM\\TestData\\Keyword.xlsx";
+}

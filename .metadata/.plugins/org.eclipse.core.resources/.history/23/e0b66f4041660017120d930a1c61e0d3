@@ -1,0 +1,16 @@
+package com.OrgHRM.Tests;
+
+import org.apache.log4j.Logger;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Log4jEg {
+	private static Logger logger=Logger.getLogger(Log4jEg.class);
+	public static void main(String[] args)
+	{
+		WebDriver driver=new FirefoxDriver();
+		
+
+	}
+
+}

@@ -1,0 +1,30 @@
+package com.OrgHRM.Tests;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+import com.OrgHRM.Utilities.Constants;
+
+public class KeyWord_DriverScript extends Constants
+{
+
+	public static void main(String[] args) throws IOException
+	{
+		FileInputStream keyword_fi=new FileInputStream(xlpath);
+		
+		XSSFWorkbook keyword_WB=new XSSFWorkbook(keyword_fi);
+		XSSFSheet TC_Sht=keyword_WB.getSheet("TestCase");
+		XSSFSheet TS_Sht=keyword_WB.getSheet("Teststeps");
+		
+		int Tc_Rows_Cnt=TC_Sht.getLastRowNum();
+		int Ts_Rows_Cnt=TS_Sht.getLastRowNum();
+		
+		
+
+	}
+
+}

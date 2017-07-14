@@ -1,0 +1,10 @@
+package com.OrgHRM.Utilities;
+
+import com.OrgHRM.LibraryFiles.OrgHrm_Master;
+
+public class Constants 
+{
+	public static OrgHrm_Master om=new OrgHrm_Master();
+	public static String xlpath="F:\\LiveProject\\HRMS_OrangeHRM\\src\\com\\OrgHRM\\TestData\\Keyword.xlsx";
+	public static String xlout="F:\\LiveProject\\HRMS_OrangeHRM\\src\\com\\OrgHRM\\Results\\keyRes.xlsx";
+}

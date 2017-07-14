@@ -1,0 +1,21 @@
+package com.OrgHRM.Tests;
+
+import org.openqa.selenium.Platform;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.annotations.Test;
+
+public class GridEg 
+{
+	@Test
+	public void test()
+	{
+		DesiredCapabilities cap=DesiredCapabilities.firefox();
+		cap.setPlatform(Platform.WINDOWS);
+		
+		WebDriver driver=new RemoteWebDriver(new URL("http://192.168.0.3:4444/wd/hub"), cap);
+		
+	}
+
+}
